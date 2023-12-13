@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia&family=Permanent+Marker&family=Roboto:wght@100;300;400;700&family=Source+Code+Pro&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+.title{
+    position: absolute;
+    font-size: 2em;
+    margin-top: 2vw;
+    background-color: rgba(0,0,0,.4);
+    color: white;
+    padding: 2px 3px;
+    border-radius: 10px;
+}
+body{
+    background-color: rgb(15, 17, 81);
+}
+.menu{
+    display: none;
+}
+.gototop{
+    position: fixed;
+    right: 2vw;
+    bottom: 2vw;
+}
+.gototop img{
+    height: 4vw;
+}
+.nav{
+    display:flex;
+    
+    align-items: center;
+    height: 80px;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(15,17,81,.7);
+    color: #fff;
+
+    
+}
+.options{
+    display: flex;
+    gap: 2.5vw;
+    width: 50%;
+    transition: .4s;
+    
+}
+.logo{
+    width: 50%;
+}
+.options a{
+    text-decoration: none;
+    font-size: 1.6em;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+.options a:hover{
+    
+    background-color: linear-gradient(to bottom, #de0521, #f45d00, #ff9500, #ffcb00, #f4ff02);
+    background-image: linear-gradient(to bottom, #de0521, #f45d00, #ff9500, #ffcb00, #f4ff02);
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    
+}
+.logo a{
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+
+}
+
+.homesec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+    gap: 3vw;
+    
+}
+.homesec h1{
+    font-size: 13vw;
+    font-weight: 600;
+    background: linear-gradient(to right, #350537, #5e084d, #8b075e, #bb076a, #eb1270);
+    
+  
+  /* Create the gradient. */
+   background-image: linear-gradient(
+        45deg,
+        #CA4246 16.666%, 
+        #E16541 16.666%, 
+        #E16541 33.333%, 
+        #F18F43 33.333%, 
+        #F18F43 50%, 
+        #8B9862 50%, 
+        #a1b757 66.666%, 
+        #476098 66.666%, 
+        #476098 83.333%, 
+        #A7489B 83.333%);
+  
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+.homesec h2{
+    font-size: 3vw;
+    font-weight: 100;
+    color: white;
+}
+.container{
+    margin: 3vw;
+    margin-bottom: 15vw;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 30px;
+    /* to add some space above */
+    scroll-margin-top: 20vh ;
+}
+
+/* for rounded corner of landscape devices*/
+.leftround{
+    border-radius: 30px 0px 0px 30px;
+}
+.rightround{
+    border-radius: 0px 30px 30px 0px;
+}
+
+.imgcontainer{
+    display: flex;
+    align-items: center;
+    width: 35%;
+    justify-content: center;
+    
+    background-color: white;
+}
+.imgcontainer img{
+    height:30vw;
+}
+.skillleft{
+    color: white;
+    background-color: rgb(200, 55, 77);
+}
+.textcontainer{
+    flex-direction: column;
+    gap: 2vw;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw;
+    
+    
+}
+.textcontainer p{
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 300;
+}
+.textcontainer a{
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 300;
+    
+}
+.textcontainer h2{
+    font-size: 3.9em;
+    font-weight: 400;
+    margin-bottom: 4vw;
+    font-family: 'Permanent Marker', cursive;
+
+}
+.textcontainer h3{
+    font-size: 2em;
+    font-weight: 300;
+}
+.textcontainer img{
+    height: 4vw;
+}
+.social{
+    display: flex;
+    gap: 10vw;
+    flex-wrap: wrap;
+    
+
+}
+
+.projectleft{
+    
+    
+}
+.projectright{
+    
+    color: white;
+    background-color: rgb(70, 70, 225);
+}
+.projectright a{
+    color: white;
+}
+.aboutleft{
+    background-color: #2eaeca;
+}
+.contactleft{
+    background-color: rgba(23, 217, 49, 0.58);
+    color: white;
+}
+.contactleft a{
+    color: white;
+}
+
+footer{
+    display: flex;
+    padding: 1vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    font-size: 1.1em;
+    margin-bottom: 2vh;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+@media only screen and (max-width: 999px) {
+    .container{
+        margin: 5vw;
+        border-radius: 30px;
+        margin-bottom: 50vw;
+        text-align: center;
+    }
+    
+    .logo a{
+        
+        font-size: 1em;
+    
+    }
+    .nav{
+        height: 50px;
+        justify-content: space-between;
+
+    }
+    .logo a{
+        font-size: 1.4em;
+    }
+    .options {
+        display:none ;
+    }
+    .menu{
+        display: block;
+        color: white;
+    }
+    .menu img{
+        width: 1.6em;
+    }
+    .gototop{
+        right: 3vw;
+        bottom: 3vw;
+    }
+    .gototop img{
+        height: 10vw;
+    }
+    .homesec{
+        height: 90vh;
+    }
+    .homesec h1{
+        font-size: 12vw;
+    }
+    .homesec h2{
+        font-size: 5vw;
+    }
+
+    .textcontainer{
+        flex-direction: column;
+        gap: 2vw;
+        width: 100%;
+        padding: 10vw;
+        border-radius: 0px 0px 30px 30px;
+        
+    }
+    .textcontainer p{
+        font-size: 1.2em;
+    }
+    .textcontainer a{
+        font-size: 1em;
+
+    }
+    .textcontainer h2{
+        font-size: 1.7em;
+        font-weight: 400;
+        margin-bottom: 15vw;
+    
+    }
+    .textcontainer h3{
+        font-size: 1.3em;
+        font-weight: 300;
+    }
+    .textcontainer img{
+        height: 8vw;
+    }
+    .skillsec,.aboutsec{
+        flex-wrap: wrap-reverse;
+    }
+    
+    
+    .aboutright{
+        
+    }
+    .aboutsec{
+        margin-top: 10px;
+    }
+    
+
+    .imgcontainer{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        color: transparent;
+        border-radius: 30px 30px 0px 0px;
+    }
+    .imgcontainer img{
+        min-height:50vw;
+        border-radius: 20px;
+    }
+    .projectright{
+        color: white;
+    }
+    .projectright a{
+        color: #fff;
+    }
+    footer{
+        padding: .8vh;
+        font-size: .9em;
+    }
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }
